@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+
+            height: 100vh;
+        }
+
+        body {
+            background-image: url('https://img5.goodfon.com/wallpaper/nbig/2/73/vzgliad-poza-fitnes-muscle-myshtsy-press-atlet-trenazhery--2.jpg');
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .left {
+            position: absolute;
+            top: 31px;
+            left: 15px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            font-size: 12px;
+            /* margin: 2px; */
+        }
+
+        .left h1 {
+            margin: 0.5px;
+        }
+
+        .left img {
+            display: block;
+            margin: 2px auto;
+            width: 113px;
+            height: 103px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 41%;
+            box-sizing: border-box;
+            margin: 38px auto;
+            padding: 0px 9px;
+        }
+
+        nav ul {
+            font-size: 25px;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+            text-decoration: none;
+            display: inline-block;
+            list-style: none;
+            color: white;
+            /* padding: 2px 6px; */
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 18px;
+            margin: 2px 0px;
+            transition: text-decoration-color 300ms;
+        }
+
+        nav li a:hover {
+            color: antiquewhite;
+            text-decoration: overline;
+            text-decoration-color: antiquewhite;
+            /* transition-property: height;
+            transition-duration: 2s;
+            transition-timing-function: ease-in; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 35px;
+            right: 16px;
+            /* border: 2px solid yellow; */
+            box-sizing: border-box;
+            width: 26%;
+        }
+
+        .btn {
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            color: white;
+            width: 90px;
+            background-color: rgb(122 121 121);
+            padding: 9px 0px;
+            margin: 10px 2px;
+        }
+
+        .right input {
+            border-color: #5b5b5b;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 16px;
+            width: 160px;
+        }
+
+        .header {
+            height: 151px;
+        }
+
+        form {
+            height: 50vh;
+            /* border: 2px solid red; */
+            width: 55%;
+            margin: 28px 18px;
+            text-align: center;
+        }
+
+        form h1 {
+            text-align: center;
+            font-size: 37px;
+        }
+
+        form div {
+            margin: 3px 33px;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input {
+            font-size: 18px;
+            width: 25vw;
+
+            text-align: center;
+            padding-top: 3px;
+            border-radius: 13px;
+            height: 3vh;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        form label {
+            padding-right: 35px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://e7.pngegg.com/pngimages/779/340/png-clipart-bodybuilding-graphics-logo-graphic-design-bodybuilding-physical-fitness-logo-thumbnail.png"
+                alt="">
+            <h1>Mayank's Fitness Gym</h1>
+        </div>
+        <div class="mid">
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">About Us</a></li>
+                    <li><a href="#" target="_blank">Fitness Calculator</a></li>
+                    <li><a href="#" target="_blank">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <input type="text" name="" id="" placeholder="Search here">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <form action="" class="form-group">
+        <h1>Join the best gym of Gurugram now</h1>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Enter your Name">
+        </div>
+        <div>
+            <label for="age" style="    margin-right: 17px    ">Age</label>
+            <input type="number" name="Age" id="age" placeholder="Enter your Age">
+        </div>
+        <div>
+            <label for="gender" style="padding-right: 47px;">Gender</label>
+            <input type="radio" style="margin-top: 0vh; width: 12px; height: 31px; position: relative; right: 5px;"
+                name="Gender" id="gender">Male &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Gender"
+                style="margin-top: 0vh; width: 12px; height: 31px; position: relative; right: 5px;" id="gender">Female
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Gender"
+                style="margin-top: 0vh; width: 12px; height: 31px; position: relative; right: 5px;" id="gender">Others
+        </div>
+        <div>
+            <label for="address" style="    padding-right: 18px;
+            ">Address</label>
+            <input type="text" name="Address" id="address" placeholder="Enter your Address">
+        </div>
+        <div>
+            <label for="mail" style="    padding-left: 8px;
+            ">Email</label>
+            <input type="email" name="Email" id="mail" placeholder="Enter your Email Id">
+        </div>
+        <div>
+            <label for="number" style="    padding-right: 4px;            ">Phone No</label>
+            <input type="number" name="Phone Number" id="number" placeholder="Enter your Phone Number">
+        </div>
+        <div>
+            <button class="btn">Submit Now</button>
+            <button class="btn">Reset Now</button>
+        </div>
+        <!-- </form> -->
+    </form>
+</body>
+
+</html>
